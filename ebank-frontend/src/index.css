@@ -1,0 +1,103 @@
+/* === NAVBAR ULTRA MODERNE === */
+.modern-navbar {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #0b72ff 0%, #0066d6 40%, #00c2a8 100%);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-inner {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Title */
+.nav-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-title:hover {
+  opacity: 0.85;
+}
+
+/* Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: 0.25s ease;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  transform: translateY(-2px);
+}
+
+/* Highlight (ex: Validations) */
+.highlight {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.highlight:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Logout button */
+.logout-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 0.90rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nav-menu {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
